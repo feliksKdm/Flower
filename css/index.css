@@ -16,27 +16,27 @@ body {
     align-items: center;
     justify-content: center;
     display: flex;
-    gap: 5%;
-    height: 20%;
+    gap: 3%;
+    height: 1%;
     background-color: #f2ebdc;
     padding-right: 7%;
 }
 
 .h1 p  , .h2 p{
-    font-size: 4rem;
+    font-size: 3rem;
     font-family: Georgia, serif !important;
     color: #c097c2 !important;
     margin: 0;
 }
 
 .h1 img {
-    height: 5rem;
+    height: 3rem;
 }
 
 .h2 {
     padding-left: 15%;
     text-align: center;
-    height: 20%;
+    height: 10%;
     background-color: #f2ebdc;
 }
 
@@ -46,7 +46,7 @@ body {
 }
 
 .headerdiv{
-    padding-top: 29px;
+    padding-top: 10px;
 }
 
 table, th, td {
@@ -62,7 +62,7 @@ table, th, td {
 }
 
 .maindiv {
-    height: 60%;
+    height: 55%;
     display: flex;
     align-items: start;
     justify-content: center;
