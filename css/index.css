@@ -1,112 +1,129 @@
-html, body {
-    height: 100%;
+html {
+    display: flex;
+    justify-content: center;
+}
+body {
+    height: 1000px;
+    width: 500px;
     margin: 0;
     padding: 0;
+    background-color: #f2ebdc;
+    color: #111111;
+    font-family: 'Open Sans',sans-serif;
+}
+
+.h1 {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    gap: 5%;
+    height: 20%;
+    background-color: #f2ebdc;
+    padding-right: 7%;
+}
+
+.h1 p  , .h2 p{
+    font-size: 4rem;
+    font-family: Georgia, serif !important;
+    color: #c097c2 !important;
+    margin: 0;
+}
+
+.h1 img {
+    height: 5rem;
+}
+
+.h2 {
+    padding-left: 15%;
+    text-align: center;
+    height: 20%;
+    background-color: #f2ebdc;
+}
+
+.solid_devider {
+    margin-bottom: 29px;
+    border-top: 3px solid #b7b5ac;
+}
+
+.headerdiv{
+    padding-top: 29px;
+}
+
+table, th, td {
+    border: 1px solid;
   }
 
+.undertext {
+    font-size: 1.125rem;
+    font-family: 'PT Sans', sans-serif !important;
+    color: #7b7a76 !important;
+    text-align: end;
+    padding-right: 50px;
+}
 
-.btns {
+.maindiv {
+    height: 60%;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    
+}
+.maindiv img{
+    object-fit: contain;
+}
+
+.links{
+    height: 30%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
-    height: 100%;
 }
 
-
-
-
-/* btn */
-.custom-btn {
-    text-align: center;
-    text-underline-offset:unset;
-    width: 130px;
-    height: 40px;
-    color: #fff;
-    border-radius: 5px;
-    padding: 10px 25px;
-    font-family: 'Lato', sans-serif;
-    font-weight: 500;
-    background: transparent;
-    cursor: pointer;
-    transition: all 0.3s ease;
+/* From uiverse.io by @alshahwan */
+button {
+    background-color: #fff;
+    border: 1px solid #bc2a8d;
+    padding: 5px;
     position: relative;
-    display: inline-block;
-     box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
-     7px 7px 20px 0px rgba(0,0,0,.1),
-     4px 4px 5px 0px rgba(0,0,0,.1);
-    outline: none;
+    width: 25rem;
+    height: 3em;
+    transition: 0.5s;
+    font-size: 25px;
+    border-radius: 0.4em;
   }
-  .btn-8 {
-    background-color: #f0ecfc;
-  background-image: linear-gradient(315deg, #f0ecfc 0%, #c797eb 74%);
-    line-height: 42px;
+  
+  button p {
+    position: absolute;
+    top: 0.9em;
+    left: 5.5em;
+    margin: 0;
     padding: 0;
-    border: none;
+    transition: .5s;
+    color: #bc2a8d;
   }
-  .btn-8 span {
-    position: relative;
-    display: block;
-    width: 100%;
-    height: 100%;
-  }
-  .btn-8:before,
-  .btn-8:after {
+  
+  button svg {
     position: absolute;
-    content: "";
-    right: 0;
-    bottom: 0;
-    background: #c797eb;
-    /*box-shadow:  4px 4px 6px 0 rgba(255,255,255,.5),
-                -4px -4px 6px 0 rgba(116, 125, 136, .2), 
-      inset -4px -4px 6px 0 rgba(255,255,255,.5),
-      inset 4px 4px 6px 0 rgba(116, 125, 136, .3);*/
-    transition: all 0.3s ease;
+    top: 1em;
+    right: 0.5em;
+    margin: 1;
+    padding: 1;
+    opacity: 0;
+    transition: 0.5s;
+    height: 1em;
+    fill: #fff
   }
-  .btn-8:before{
-     height: 0%;
-     width: 2px;
+  
+  button:hover p {
+    left: 0.6em;
+    color: #fff
   }
-  .btn-8:after {
-    width: 0%;
-    height: 2px;
+  
+  button:hover svg {
+    opacity: 1;
   }
-  .btn-8:hover:before {
-    height: 100%;
+  
+  button:hover {
+    background-color: #bc2a8d;
   }
-  .btn-8:hover:after {
-    width: 100%;
-  }
-  .btn-8:hover{
-    background: transparent;
-  }
-  .btn-8 span:hover{
-    color: #c797eb;
-  }
-  .btn-8 span:before,
-  .btn-8 span:after {
-    position: absolute;
-    content: "";
-    left: 0;
-    top: 0;
-    background: #c797eb;
-    /*box-shadow:  4px 4px 6px 0 rgba(255,255,255,.5),
-                -4px -4px 6px 0 rgba(116, 125, 136, .2), 
-      inset -4px -4px 6px 0 rgba(255,255,255,.5),
-      inset 4px 4px 6px 0 rgba(116, 125, 136, .3);*/
-    transition: all 0.3s ease;
-  }
-  .btn-8 span:before {
-    width: 2px;
-    height: 0%;
-  }
-  .btn-8 span:after {
-    height: 2px;
-    width: 0%;
-  }
-  .btn-8 span:hover:before {
-    height: 100%;
-  }
-  .btn-8 span:hover:after {
-    width: 100%;
-  }
+  
