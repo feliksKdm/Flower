@@ -5,125 +5,153 @@ html {
 body {
     height: 1000px;
     width: 500px;
-    margin: 0;
-    padding: 0;
+    background-color:  #f2ebdc;
+}
+
+
+.animation-container {
+    position: relative;
+    height: 4%;
+    overflow: hidden;
+}
+
+.animated-text {
+    position: absolute;
+    top: 0;
+    left: -100%;
+    font-size: 15px;
+    color: #000;
     background-color: #f2ebdc;
-    color: #111111;
-    font-family: 'Open Sans',sans-serif;
+    padding: 10px;
+    white-space: nowrap; /* Prevent text from wrapping */
+    animation: slideRight 5s linear infinite;
+    font-family: Arial, Helvetica, serif;
 }
 
-.h1 {
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    gap: 3%;
-    height: 1%;
-    background-color: #f2ebdc;
-    padding-right: 7%;
+@keyframes slideRight {
+    0% {
+        left: -100%;
+    }
+    100% {
+        left: 100%; /* Move to the right edge */
+    }
 }
 
-.h1 p  , .h2 p{
-    font-size: 3rem;
-    font-family: Georgia, serif !important;
-    color: #c097c2 !important;
-    margin: 0;
-}
 
-.h1 img {
-    height: 3rem;
-}
-
-.h2 {
-    padding-left: 15%;
-    text-align: center;
-    height: 10%;
-    background-color: #f2ebdc;
-}
-
-.solid_devider {
-    margin-bottom: 29px;
-    border-top: 3px solid #b7b5ac;
-}
-
-.headerdiv{
-    padding-top: 10px;
-}
-
-table, th, td {
-    border: 1px solid;
+.star {
+    width: 35px;
+    height: 35px;
+    background-image: url(media/star-removebg-preview.png);
+    background-size: cover;
   }
 
-.undertext {
-    font-size: 1.125rem;
-    font-family: 'PT Sans', sans-serif !important;
-    color: #7b7a76 !important;
-    text-align: end;
-    padding-right: 50px;
-}
+/* text */
 
-.maindiv {
-    height: 55%;
-    display: flex;
-    align-items: start;
-    justify-content: center;
-    
-}
-.maindiv img{
-    object-fit: contain;
-}
-
-.links{
-    height: 30%;
+.maintext_container {
+    height: 15%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    border: solid 2px #b7b5ac;
+    width: 90%;
+    margin-left: 5%;
+    border-top: 0px;
+    border-bottom: 0px;
+
+}
+.maintext {
+    font-size: 1.9rem;
+    font-family:serif;
+    height: 60%;
 }
 
-/* From uiverse.io by @alshahwan */
-button {
-    background-color: #fff;
-    border: 1px solid #bc2a8d;
-    padding: 5px;
-    position: relative;
-    width: 25rem;
-    height: 3em;
-    transition: 0.5s;
-    font-size: 25px;
-    border-radius: 0.4em;
-  }
-  
-  button p {
-    position: absolute;
-    top: 0.9em;
-    left: 5.5em;
+.maintext p, .secondtext p {
+    color: #544f7c;
+    margin-bottom: 0;
+}
+.maintext p{
+    margin-top: 20%;
+}
+.secondtext p{
+    margin-top: 1px;
+}
+.secondtext {
+    display: flex;
+    gap: 15%;
+    align-items: center;
+    font-family: math;
+    font-size: 1rem;
+    width: 100%;
+    margin-left: 2rem;
+    padding-bottom: 1rem;
+}
+.secondtext p{
+    padding-bottom: 30px;
+}
+
+hr {
+    border: 1px solid;
+    color: #b7b5ac;
     margin: 0;
-    padding: 0;
-    transition: .5s;
-    color: #bc2a8d;
+    margin-top: -1 !important;
+}
+
+
+img {
+    height: 251.4px;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+.maintext_containertwo {
+    height: 251.4px;
+    align-items: center;
+    justify-content: center;
+    border: solid 2px #b7b5ac;
+    width: 90%;
+    margin-left: 5%;
+    border-top: 0px;
+    border-bottom: 0px;
+}
+
+.alink{
+    margin-top: 20px;
+    display: flex;
+    width: 91%;
+    margin-left: 5%;
+    text-decoration: none;
+}
+
+button {
+    background-color: #f2ebdc;
+    border: 1px solid rgb(116, 109, 76);
+    border-radius: 2px;
+    padding: 10px;
+    font-size: 16px;
+    color: rgb(116, 109, 76);
+    width: 100%;
+
   }
-  
-  button svg {
-    position: absolute;
-    top: 1em;
-    right: 0.5em;
-    margin: 1;
-    padding: 1;
-    opacity: 0;
-    transition: 0.5s;
-    height: 1em;
-    fill: #fff
-  }
-  
-  button:hover p {
-    left: 0.6em;
-    color: #fff
-  }
-  
-  button:hover svg {
-    opacity: 1;
-  }
-  
-  button:hover {
-    background-color: #bc2a8d;
-  }
-  
+
+button:hover {
+    background-color: rgb(116, 109, 76);
+    color: #f2ebdc;
+}
+
+
+.maincontainertree{
+    height: 16%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.maincontainertree p{
+    font-size: 13px;
+    width: 90%;
+    margin-left: 5% !important;
+    font-family: Arial, Helvetica, serif;
+    color: rgb(116, 109, 76);
+    margin: 5px;
+}
