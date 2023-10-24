@@ -4,7 +4,7 @@ html {
 }
 body {
     height: 1000px;
-    width: 500px;
+    width: 380px;
     background-color:  #f2ebdc;
 }
 
@@ -41,7 +41,7 @@ body {
 .star {
     width: 35px;
     height: 35px;
-    background-image: url(media/star-removebg-preview.png);
+    background-image: url(star-removebg-preview.png);
     background-size: cover;
   }
 
